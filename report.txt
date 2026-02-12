@@ -1,0 +1,79 @@
+This is the result of me running the code on 2/11/26, writing it down here so you don't
+have to waste time running it yourself, as training the model takes about a little over
+an hour! But the results are sexy as hell!!!
+
+Loading and combining datasets...
+Cleaning and filtering...
+Creating stratified split...
+Train size: 24299 | Val size: 3037 | Test size: 3040
+
+Vectorizing text (this may take a while)...
+Vectorization complete.
+X_train shape: (24299, 989511)
+Vectorization time: 10.76 seconds
+
+Training Logistic Regression (this may take a while)...
+Training complete.
+Training time: 4358.19 seconds
+
+Evaluating model...
+Validation accuracy: 0.9851827461310504
+Test accuracy: 0.9891447368421052
+
+=== Classification report (TEST) ===
+              precision    recall  f1-score   support
+
+      arabic     1.0000    0.9930    0.9965       143
+     chinese     0.9346    1.0000    0.9662       100
+      danish     1.0000    1.0000    1.0000        32
+       dutch     1.0000    0.9858    0.9929       141
+     english     0.9372    0.9912    0.9634       226
+    estonian     1.0000    0.9800    0.9899       100
+      french     0.9896    1.0000    0.9948       190
+      german     0.9189    1.0000    0.9577        34
+       greek     1.0000    0.9630    0.9811        27
+       hindi     1.0000    0.9904    0.9952       104
+  indonesian     1.0000    1.0000    1.0000        97
+     italian     0.9508    1.0000    0.9748        58
+    japanese     1.0000    0.9900    0.9950       100
+     kannada     1.0000    1.0000    1.0000        28
+      korean     1.0000    0.9800    0.9899       100
+       latin     0.9888    0.9167    0.9514        96
+   malayalam     1.0000    1.0000    1.0000        50
+      pashto     1.0000    0.9700    0.9848       100
+     persian     1.0000    0.9900    0.9950       100
+  portuguese     0.9939    0.9939    0.9939       163
+    romanian     1.0000    0.9900    0.9950       100
+     russian     0.9936    1.0000    0.9968       156
+     spanish     1.0000    0.9940    0.9970       168
+     swedish     1.0000    1.0000    1.0000       155
+       tamil     1.0000    0.9854    0.9926       137
+        thai     1.0000    1.0000    1.0000       100
+     turkish     1.0000    0.9926    0.9963       135
+        urdu     1.0000    0.9700    0.9848       100
+
+    accuracy                         0.9891      3040
+   macro avg     0.9895    0.9884    0.9887      3040
+weighted avg     0.9897    0.9891    0.9892      3040
+
+
+=== Top confusions (TEST) ===
+latin -> english : 5
+pashto -> english : 2
+korean -> chinese : 2
+urdu -> english : 2
+dutch -> german : 1
+persian -> english : 1
+greek -> english : 1
+english -> latin : 1
+estonian -> german : 1
+japanese -> russian : 1
+latin -> french : 1
+urdu -> chinese : 1
+latin -> german : 1
+estonian -> portuguese : 1
+portuguese -> english : 1
+
+Total runtime: 4374.45 seconds
+
+Process finished with exit code 0
