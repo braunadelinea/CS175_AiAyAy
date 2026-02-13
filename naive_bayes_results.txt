@@ -1,0 +1,155 @@
+-----Running Naive Bayes Model-----
+
+Loading and combining datasets...
+Cleaning and filtering...
+Creating stratified split...
+Train size: 24299 | Val size: 3037 | Test size: 3040
+
+
+---Running Naive Bayes with n-gram Tokenization---
+Tokenizing n-gram...
+Vocabulary size: 997520
+Vectorizing Train...
+Vectorizing Val...
+Vectorizing Test...
+Preprocessing time: 18.29 s
+Training MultinomialNB with n-gram features...
+Evaluating...
+Validation accuracy: 0.9743
+Test accuracy:       0.9770
+Classification Report (Test):
+              precision    recall  f1-score   support
+
+      arabic     1.0000    1.0000    1.0000       143
+     chinese     1.0000    0.8700    0.9305       100
+      danish     1.0000    0.4688    0.6383        32
+       dutch     0.9329    0.9858    0.9586       141
+     english     0.8726    1.0000    0.9320       226
+    estonian     1.0000    0.9800    0.9899       100
+      french     0.9694    1.0000    0.9845       190
+      german     1.0000    0.8235    0.9032        34
+       greek     1.0000    0.9630    0.9811        27
+       hindi     1.0000    0.9904    0.9952       104
+  indonesian     1.0000    1.0000    1.0000        97
+     italian     0.9831    1.0000    0.9915        58
+    japanese     1.0000    0.9600    0.9796       100
+     kannada     1.0000    1.0000    1.0000        28
+      korean     1.0000    0.9900    0.9950       100
+       latin     0.9659    0.8854    0.9239        96
+   malayalam     1.0000    1.0000    1.0000        50
+      pashto     1.0000    0.9800    0.9899       100
+     persian     1.0000    0.9900    0.9950       100
+  portuguese     0.9877    0.9816    0.9846       163
+    romanian     1.0000    0.9900    0.9950       100
+     russian     0.9873    1.0000    0.9936       156
+     spanish     0.9940    0.9940    0.9940       168
+     swedish     0.9281    1.0000    0.9627       155
+       tamil     1.0000    0.9854    0.9926       137
+        thai     1.0000    1.0000    1.0000       100
+     turkish     1.0000    1.0000    1.0000       135
+        urdu     1.0000    0.9800    0.9899       100
+
+    accuracy                         0.9770      3040
+   macro avg     0.9865    0.9578    0.9679      3040
+weighted avg     0.9788    0.9770    0.9761      3040
+
+
+
+---Running Naive Bayes with Bag of Words Tokenization---
+Tokenizing Bag of Words...
+Vocabulary size: 12263
+Vectorizing Train...
+Vectorizing Val...
+Vectorizing Test...
+Preprocessing time: 39.98 s
+Training MultinomialNB with Bag of Words features...
+Evaluating...
+Validation accuracy: 0.6062
+Test accuracy:       0.6145
+Classification Report (Test):
+              precision    recall  f1-score   support
+
+      arabic     0.1360    0.9860    0.2390       143
+     chinese     0.5000    0.0200    0.0385       100
+      danish     1.0000    0.9375    0.9677        32
+       dutch     0.9929    0.9858    0.9893       141
+     english     0.7475    0.9956    0.8539       226
+    estonian     0.9896    0.9500    0.9694       100
+      french     0.9794    1.0000    0.9896       190
+      german     0.9444    1.0000    0.9714        34
+       greek     0.0000    0.0000    0.0000        27
+       hindi     0.2000    0.0481    0.0775       104
+  indonesian     1.0000    0.9897    0.9948        97
+     italian     0.9508    1.0000    0.9748        58
+    japanese     0.8571    0.0600    0.1121       100
+     kannada     0.0000    0.0000    0.0000        28
+      korean     0.5714    0.0800    0.1404       100
+       latin     0.9767    0.8750    0.9231        96
+   malayalam     0.0000    0.0000    0.0000        50
+      pashto     0.4286    0.1200    0.1875       100
+     persian     0.4286    0.0300    0.0561       100
+  portuguese     0.9877    0.9816    0.9846       163
+    romanian     1.0000    0.9900    0.9950       100
+     russian     0.1040    0.0833    0.0925       156
+     spanish     0.9940    0.9940    0.9940       168
+     swedish     0.9810    1.0000    0.9904       155
+       tamil     0.3571    0.0365    0.0662       137
+        thai     0.5714    0.0400    0.0748       100
+     turkish     0.9851    0.9778    0.9814       135
+        urdu     0.5000    0.0500    0.0909       100
+
+    accuracy                         0.6145      3040
+   macro avg     0.6494    0.5440    0.5270      3040
+weighted avg     0.6935    0.6145    0.5828      3040
+
+
+
+---Running Naive Bayes with TF-IDF Tokenization---
+Tokenizing TF-IDF...
+Vocabulary size: 12263
+Vectorizing Train...
+Vectorizing Val...
+Vectorizing Test...
+Preprocessing time: 37.82 s
+Training MultinomialNB with TF-IDF features...
+Evaluating...
+Validation accuracy: 0.6141
+Test accuracy:       0.6171
+Classification Report (Test):
+              precision    recall  f1-score   support
+
+      arabic     0.5714    0.0280    0.0533       143
+     chinese     0.6667    0.0600    0.1101       100
+      danish     1.0000    1.0000    1.0000        32
+       dutch     0.9787    0.9787    0.9787       141
+     english     0.6871    0.9912    0.8116       226
+    estonian     0.9417    0.9700    0.9557       100
+      french     0.9450    0.9947    0.9692       190
+      german     0.8718    1.0000    0.9315        34
+       greek     0.0000    0.0000    0.0000        27
+       hindi     0.2500    0.0192    0.0357       104
+  indonesian     0.9897    0.9897    0.9897        97
+     italian     0.9355    1.0000    0.9667        58
+    japanese     0.7778    0.0700    0.1284       100
+     kannada     1.0000    0.0357    0.0690        28
+      korean     0.7692    0.1000    0.1770       100
+       latin     0.9551    0.8854    0.9189        96
+   malayalam     0.0000    0.0000    0.0000        50
+      pashto     0.5714    0.0800    0.1404       100
+     persian     0.6250    0.0500    0.0926       100
+  portuguese     0.9939    0.9939    0.9939       163
+    romanian     0.9706    0.9900    0.9802       100
+     russian     0.1310    0.9295    0.2296       156
+     spanish     0.9882    0.9940    0.9911       168
+     swedish     0.9451    1.0000    0.9718       155
+       tamil     0.4375    0.0511    0.0915       137
+        thai     0.4615    0.0600    0.1062       100
+     turkish     0.9778    0.9778    0.9778       135
+        urdu     0.6364    0.0700    0.1261       100
+
+    accuracy                         0.6171      3040
+   macro avg     0.7171    0.5471    0.5285      3040
+weighted avg     0.7372    0.6171    0.5802      3040
+
+
+Total runtime: 97.60 seconds
