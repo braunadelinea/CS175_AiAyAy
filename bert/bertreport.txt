@@ -1,0 +1,58 @@
+Evaluating model...
+Test accuracy: 0.994075
+
+=== Classification report (TEST) ===
+              precision    recall  f1-score   support
+
+      arabic     1.0000    1.0000    1.0000       143
+     chinese     1.0000    1.0000    1.0000       100
+      danish     1.0000    1.0000    1.0000        31
+       dutch     1.0000    1.0000    1.0000       141
+     english     0.9658    1.0000    0.9826       226
+    estonian     1.0000    0.9800    0.9899       100
+      french     0.9947    0.9895    0.9921       190
+      german     1.0000    1.0000    1.0000        35
+       greek     1.0000    1.0000    1.0000        27
+       hindi     1.0000    0.9905    0.9952       105
+  indonesian     1.0000    1.0000    1.0000        97
+     italian     1.0000    1.0000    1.0000        58
+    japanese     1.0000    1.0000    1.0000       100
+     kannada     1.0000    1.0000    1.0000        27
+      korean     1.0000    1.0000    1.0000       100
+       latin     0.9495    0.9895    0.9691        95
+   malayalam     1.0000    1.0000    1.0000        49
+      pashto     1.0000    0.9700    0.9848       100
+     persian     1.0000    1.0000    1.0000       100
+  portuguese     0.9879    1.0000    0.9939       163
+    romanian     1.0000    0.9900    0.9950       100
+     russian     0.9936    1.0000    0.9968       156
+     spanish     0.9940    0.9821    0.9880       168
+     swedish     1.0000    1.0000    1.0000       155
+       tamil     1.0000    1.0000    1.0000       137
+        thai     1.0000    0.9700    0.9848       100
+     turkish     1.0000    0.9926    0.9963       135
+        urdu     1.0000    0.9900    0.9950       100
+
+    accuracy                         0.9941      3038
+   macro avg     0.9959    0.9944    0.9951      3038
+weighted avg     0.9942    0.9941    0.9941      3038
+
+
+=== Top confusions (TEST) ===
+pashto -> english : 3
+spanish -> latin : 2
+estonian -> latin : 1
+estonian -> russian : 1
+french -> latin : 1
+french -> spanish : 1
+hindi -> english : 1
+latin -> english : 1
+romanian -> latin : 1
+spanish -> portuguese : 1
+thai -> english : 1
+thai -> french : 1
+thai -> portuguese : 1
+turkish -> english : 1
+urdu -> english : 1
+
+Total runtime: 25.83 seconds
