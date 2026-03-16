@@ -1,0 +1,48 @@
+Total samples: 100
+Accuracy: 0.4400
+
+=== Classification Report ===
+              precision    recall  f1-score   support
+
+      arabic       0.50      0.17      0.25         6
+     chinese       0.50      0.50      0.50         2
+      danish       0.00      0.00      0.00         1
+       dutch       1.00      0.25      0.40         4
+     english       0.60      0.82      0.69        11
+    estonian       1.00      0.12      0.22         8
+      french       0.29      0.67      0.40         3
+       greek       0.00      0.00      0.00         0
+       hindi       0.00      0.00      0.00         6
+  indonesian       0.00      0.00      0.00         1
+     invalid       0.00      0.00      0.00         0
+     italian       0.33      0.50      0.40         2
+    japanese       0.33      0.67      0.44         3
+     kannada       0.00      0.00      0.00         1
+      korean       0.00      0.00      0.00         1
+   malayalam       0.00      0.00      0.00         2
+     persian       0.50      0.57      0.53         7
+  portuguese       0.67      0.25      0.36         8
+    romanian       0.00      0.00      0.00         5
+     russian       0.67      0.80      0.73        10
+     spanish       0.27      0.75      0.40         4
+     swedish       0.67      0.67      0.67         6
+       tamil       1.00      0.50      0.67         2
+        thai       0.00      0.00      0.00         1
+     turkish       0.67      0.67      0.67         6
+
+    accuracy                           0.44       100
+   macro avg       0.36      0.32      0.29       100
+weighted avg       0.52      0.44      0.42       100
+
+
+=== Top Confusions ===
+arabic -> persian : 3
+estonian -> invalid : 3
+hindi -> invalid : 3
+portuguese -> english : 2
+portuguese -> spanish : 2
+arabic -> spanish : 1
+arabic -> turkish : 1
+chinese -> spanish : 1
+danish -> swedish : 1
+dutch -> english : 1
