@@ -78,3 +78,15 @@ Scripts/Functions Written Entirely by Our Team:
     - trainer.py: Trains a language classification model using TF-IDF character n-grams and Logistic Regression,
       evaluates its accuracy on validation and test sets, and saves the trained model pipeline for later use.
         (82 lines)
+
+    - train_mel_nn.py: This script trains a CNN model on mel spectrograms of audio files.
+        (147 lines)
+
+    - train_mfcc.py: This script trains a Random Forest model on mel-frequency cepstral coefficients (MFCCs) of audio files.
+        (85 lines)
+
+    - train_raw_nn.py: This script trains a CNN directly on raw audio waveforms.
+        (120 lines)
+
+    - train_w2v.py: This script trains a Random Forest model on Wav2Vec2 features of audio files.
+        (96 lines)
