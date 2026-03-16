@@ -1,3 +1,8 @@
+# llmgemma.py: Uses the Gemma language model from HuggingFace to classify the language of text samples,
+# evaluates prediction accuracy against the true labels, and saves the results to a CSV file.
+
+# Author: Aryan Joshi
+
 from transformers import pipeline
 from huggingface_hub import login
 import pandas as pd

@@ -1,8 +1,14 @@
+# tk_interface.py: Creates a Tkinter graphical user interface that loads a trained language classification model and
+# allows users to input text and see the predicted language along with the top three predictions and their confidence
+# scores.
+
+# Author: Wisam Zeidan
+
 import tkinter as tk
 from tkinter import ttk, messagebox
 import joblib
 
-BUNDLE_PATH = "artifacts/language_pipeline.joblib"
+BUNDLE_PATH = "../artifacts/language_pipeline.joblib"
 
 
 class LanguageClassifierUI(tk.Tk):

@@ -1,3 +1,9 @@
+# bertreport.py: Evaluates the trained language classification model on the test dataset, computing overall accuracy,
+# generating a detailed classification report, producing a confusion matrix, and identifying the most common language
+# misclassification pairs.
+
+# Author: Aryan Joshi
+
 import time
 import numpy as np
 import torch
@@ -5,6 +11,7 @@ import torch.nn.functional as F
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 start = time.time()
+
 
 def eval_model(model, loader, id2label):
     model.eval()

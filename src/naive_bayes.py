@@ -1,13 +1,16 @@
+# naive_bayes.py: Runs a full Naive Bayes language classification pipeline by preprocessing the dataset, generating
+# features using Bag-of-Words, character n-grams, and TF-IDF, training a Multinomial Naive Bayes model,
+# and evaluating its performance on validation and test sets.
+
+# Author: Adeline Braun
+
 import os
-import sys
 import time
 import numpy as np
-from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
-from datamanager import load_and_combine, basic_clean_and_filter, stratified_split
-import bag_of_words
-import n_gram
+from sklearn.metrics import accuracy_score, classification_report
+from src.datamanager import load_and_combine, basic_clean_and_filter, stratified_split
+from src import bag_of_words, n_gram
 import tf_idf
 
 def run_naive_bayes_pipeline():
@@ -36,7 +39,7 @@ def run_naive_bayes_pipeline():
         "TF-IDF": tf_idf
     }
 
-    from scipy.sparse import dok_matrix, csr_matrix
+    from scipy.sparse import csr_matrix
 
     for name, module in tokenizers.items():
         if module is None: 

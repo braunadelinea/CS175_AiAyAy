@@ -1,3 +1,8 @@
+# testbert.py: Loads the trained BERT language classification model and tests it by predicting the language of
+# several example sentences.
+
+# Author: Aryan Joshi
+
 import torch
 import torch.nn as nn
 from transformers import BertTokenizer, BertModel

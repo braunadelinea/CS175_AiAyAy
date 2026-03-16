@@ -1,3 +1,8 @@
+# terminal_interface.py: Loads a trained language classification pipeline and provides a command-line interface that
+# allows users to input text and receive a predicted language with a confidence score.
+
+# Author: Wisam Zeidan
+
 import joblib
 
 BUNDLE_PATH = "artifacts/language_pipeline.joblib"

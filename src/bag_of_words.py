@@ -1,5 +1,9 @@
+# bag_of_words.py: Implements a Bag-of-Words feature extraction pipeline by cleaning text, building a vocabulary of
+# frequent terms, and generating a sparse matrix representing term frequencies across documents.
+
+# Author: Adeline Braun
+
 import re
-import os
 import datamanager
 from collections import Counter
 

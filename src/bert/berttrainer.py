@@ -1,3 +1,8 @@
+# berttrainer.py: Trains a BERT-based language classification model on the dataset by tokenizing text, creating data
+# loaders, training the model for two epochs, and saving the trained model weights.
+
+# Author: Aryan Joshi
+
 import pandas as pd
 import torch
 import torch.nn as nn

@@ -1,3 +1,8 @@
+# datamanager.py: Loads multiple language datasets, standardizes their format, cleans and filters the text data,
+# fixes label inconsistencies, and provides a stratified train/validation/test split while preserving class balance.
+
+# Author: Wisam Zeidan
+
 import pandas as pd
 
 # Put all known label typo fixes here (keep this as the single source of truth)

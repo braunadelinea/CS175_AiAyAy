@@ -1,3 +1,8 @@
+# tf_idf.py: Implements TF-IDF feature extraction by cleaning text, building a vocabulary of frequent terms,
+# and computing TF-IDF weights for each term across documents.
+
+# Author: Adeline Braun
+
 import re
 import math
 import numpy as np

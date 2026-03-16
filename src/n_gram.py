@@ -1,5 +1,10 @@
+# n_grams.py: Generates character n-gram features (3–5 characters) from text documents and constructs a sparse matrix
+# of n-gram frequencies for use in language identification models.
+
+# Author: Adeline Braun
+
 import os
-import datamanager
+from src import datamanager
 from collections import Counter
 
 def load_data():

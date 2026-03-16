@@ -1,4 +1,9 @@
-from datamanager import load_and_combine, basic_clean_and_filter, stratified_split
+# trainer.py: Trains a language classification model using TF-IDF character n-grams and Logistic Regression,
+# evaluates its accuracy on validation and test sets, and saves the trained model pipeline for later use.
+
+# Author: Wisam Zeidan
+
+from src.datamanager import load_and_combine, basic_clean_and_filter, stratified_split
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression

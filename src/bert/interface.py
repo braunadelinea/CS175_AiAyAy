@@ -1,3 +1,7 @@
+# interface.py: Loads the trained BERT language classification model and launches a Gradio web interface that
+# predicts the top three most likely languages for user-entered text along with their confidence scores.
+
+# Author: Aryan Joshi
 
 import torch
 import torch.nn as nn

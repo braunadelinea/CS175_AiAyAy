@@ -1,9 +1,15 @@
+# full_dataset_tester.py: Evaluates the trained language classification model on an external HuggingFace language
+# dataset, reporting overall accuracy, per-language performance, and how the model classifies languages it was not
+# trained on.
+
+# Author: Wisam Zeidan
+
 import joblib
 import pandas as pd
 from sklearn.metrics import accuracy_score, classification_report
 
 
-BUNDLE_PATH = "artifacts/language_pipeline.joblib"
+BUNDLE_PATH = "../artifacts/language_pipeline.joblib"
 
 
 def get_new_dataset():
